@@ -5,6 +5,8 @@
 
 This API is used to update device CLI settings in current domain. The response of this API will return a list in JSON format.<br>
 
+**Note:** the privilege requirement is following UI setting: except **Guest** role, all other roles can access these three PUT APIs. 
+
 ## Detail Information
 
 >**Title:** Update device CLI settings API
