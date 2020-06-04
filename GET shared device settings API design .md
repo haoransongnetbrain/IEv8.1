@@ -315,44 +315,6 @@ This API is used to get device CLI settings in current domain. The response of t
                     "checkSSHFingerprint" : true,
                     "SSHFingerprintKey" : "xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx"
                 }
-                #############################
-                "LoginScript": {
-                    "enable" : True/False,
-                    "Private" : {      #???
-                        "ExpectItems" : []
-                    },
-                    "UseLoginScript" : true,
-                    "NonePrivate" : {    #???
-                        "ExpectItems" : []
-                    },
-                    "cliModes" : [{
-                        "name" : "Non-privilege Mode",
-                        "basedOn" : "",
-                        "content" : {
-                            "ExpectItems" : [],
-                            "supportPingTraceFrom" : false,
-                            "couldEnterCmMode" : false,
-                            "relatedBuiltinCmd" : [],
-                            "relatedCustomizeCmd" : []
-                          }
-                        }, 
-                      {
-                        "name" : "Privilege Mode",
-                        "basedOn" : "",
-                        "content" : {
-                            "ExpectItems" : [],
-                            "supportPingTraceFrom" : false,
-                            "couldEnterCmMode" : false,
-                            "relatedBuiltinCmd" : [],
-                            "relatedCustomizeCmd" : []
-                         }
-                      },
-                      .
-                      .
-                      .
-                  ]
-                },
-                ##########################
             }
         }
     }
@@ -432,9 +394,7 @@ This API is used to get device SNMP settings in current domain. The response of 
 |shareDeviceSettings.SNMP_setting.v3.encryptPro| object | v3 SNMP encryptPro??. |
 |shareDeviceSettings.SNMP_setting.v3.userName| object | v3 SNMP username. |
 |shareDeviceSettings.SNMP_setting.v3.authMode| object | v3 SNMP authentication mode. |
-|shareDeviceSettings.SNMP_setting.v3.authPassword| object | v3 SNMP authentication password. |
 |shareDeviceSettings.SNMP_setting.v3.authPro| object | v3 SNMP authentication pro???. |
-|shareDeviceSettings.SNMP_setting.v3.encryptPassword| object | v3 SNMP encryptPassword. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp| object | SNMP customized management IP setting . |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_CPU| string | value of customized management IP retrieve CPU. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_memory| string | value of customized management IP retrieve memory. |
@@ -466,9 +426,7 @@ This API is used to get device SNMP settings in current domain. The response of 
             "encryptPro": 0,
             "userName": "=",
             "authMode": 0,
-            "authPassword": "=",
-            "authPro": 0,
-            "encryptPassword": "="
+            "authPro": 0
           },
           "snmpVersion": 2,
           "UseCustomizedManagementIp": false,
@@ -485,9 +443,7 @@ This API is used to get device SNMP settings in current domain. The response of 
               "encryptPro": 0,
               "userName": "=",
               "authMode": 0,
-              "authPassword": "=",
-              "authPro": 0,
-              "encryptPassword": "="
+              "authPro": 0
             }
           }  
         }
