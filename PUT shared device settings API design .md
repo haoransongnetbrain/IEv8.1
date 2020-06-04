@@ -36,14 +36,20 @@ This API is used to update device CLI settings in current domain. The response o
 |shareDeviceSettings.CLI_setting.access_mode| string | access mode. |
 |shareDeviceSettings.CLI_setting.access_mode_port| string | port number of access mode. |
 |shareDeviceSettings.CLI_setting.CLI_credential_username| string | usename for CLI credential. |
+|shareDeviceSettings.CLI_setting.CLI_credential_password| string | password for CLI credential. |
 |shareDeviceSettings.CLI_setting.privilege_username| string | device privilege username. |
+|shareDeviceSettings.CLI_setting.privilege_password| string | device privilege password. |
+|shareDeviceSettings.CLI_setting.Telnet_Proxy_Id| string | Telnet_Proxy_Id. |
+|shareDeviceSettings.CLI_setting.Telnet_Proxy_Id_For_Smart_CLI| string | Telnet_Proxy_Id_For_Smart_CLI. |
 |shareDeviceSettings.CLI_setting.jumpbox_for_FS| string | whether a front server jumpbox is needed. |
 |shareDeviceSettings.CLI_setting.jumpbox_for_CLI| string | whether a CLI jumpbox is needed. |
 |shareDeviceSettings.CLI_setting.prompt_settings| object | object for CLI prompt settings. |
 |shareDeviceSettings.CLI_setting.prompt_settings.non_privilege_prompt| string | non_privilege_prompt. |
 |shareDeviceSettings.CLI_setting.prompt_settings.privilege_prompt| string | privilege_prompt. |
 |shareDeviceSettings.CLI_setting.prompt_settings.login_prompt_username| string | login_prompt_username. |
-|shareDeviceSettings.CLI_setting.prompt_settings.privilege_login_prompt_username| string | privilege_login_prompt_username. |
+|shareDeviceSettings.CLI_setting.prompt_settings.login_prompt_password| string | login_prompt_password. |
+|shareDeviceSettings.CLI_setting.prompt_settings.privilege_login_prompt| string | privilege_login_prompt_username. |
+|shareDeviceSettings.CLI_setting.prompt_settings.privilege_password_prompt| string | privilege_password_prompt. |
 |shareDeviceSettings.CLI_setting.advenced_setting| object | object for CLI advanced settings. |
 |shareDeviceSettings.CLI_setting.advenced_setting.ForceTimeout| integer | force time out for CLI access |
 |shareDeviceSettings.CLI_setting.advenced_setting.SSH_key_setting| object | object for CLI SSH finger print settings. |
@@ -67,14 +73,20 @@ API Body = {
             "access_mode":"string",
             "access_mode_port":"string"/int,
             "CLI_credential_username":"string",
+            "CLI_credential_Password":"string",
             "privilege_username":"string",
+            "privilege_password":"string",           
+            "Telnet_Proxy_Id" : "string",
+            "Telnet_Proxy_Id_For_Smart_CLI" : "string",
             "jumpbox_for_FS":"string",
             "jumpbox_for_CLI":"string",
             "prompt_settings":{
                 "non_privilege_prompt":"string",
                 "privilege_prompt":"string",
                 "login_prompt_username":"string",
-                "privilege_login_prompt_username":"string"
+                "login_prompt_password":"string",
+                "privilege_login_prompt":"string"
+                "privilege_password_prompt":"string"
             },
             "advenced_setting":{
                 "ForceTimeout" : int,
@@ -82,44 +94,6 @@ API Body = {
                     "checkSSHFingerprint" : true,
                     "SSHFingerprintKey" : "xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx"
                 }
-                #############################
-                "LoginScript": {
-                    "enable" : True/False,
-                    "Private" : {      #???
-                        "ExpectItems" : []
-                    },
-                    "UseLoginScript" : true,
-                    "NonePrivate" : {    #???
-                        "ExpectItems" : []
-                    },
-                    "cliModes" : [{
-                        "name" : "Non-privilege Mode",
-                        "basedOn" : "",
-                        "content" : {
-                            "ExpectItems" : [],
-                            "supportPingTraceFrom" : false,
-                            "couldEnterCmMode" : false,
-                            "relatedBuiltinCmd" : [],
-                            "relatedCustomizeCmd" : []
-                          }
-                        }, 
-                      {
-                        "name" : "Privilege Mode",
-                        "basedOn" : "",
-                        "content" : {
-                            "ExpectItems" : [],
-                            "supportPingTraceFrom" : false,
-                            "couldEnterCmMode" : false,
-                            "relatedBuiltinCmd" : [],
-                            "relatedCustomizeCmd" : []
-                         }
-                      },
-                      .
-                      .
-                      .
-                  ]
-                },
-                ##########################
             }
         }
     }
