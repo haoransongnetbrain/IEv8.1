@@ -65,6 +65,8 @@ This API is used to get devices shared device settings in current domain. The re
 |shareDeviceSettings.CLI_setting.access_mode| string | access mode. |
 |shareDeviceSettings.CLI_setting.access_mode_port| string | port number of access mode. |
 |shareDeviceSettings.CLI_setting.CLI_credential_username| string | usename for CLI credential. |
+|shareDeviceSettings.CLI_setting.Telnet_Proxy_Id| string | Telnet_Proxy_Id. |
+|shareDeviceSettings.CLI_setting.Telnet_Proxy_Id_For_Smart_CLI| string | Telnet_Proxy_Id_For_Smart_CLI. |
 |shareDeviceSettings.CLI_setting.privilege_username| string | device privilege username. |
 |shareDeviceSettings.CLI_setting.jumpbox_for_FS| string | whether a front server jumpbox is needed. |
 |shareDeviceSettings.CLI_setting.jumpbox_for_CLI| string | whether a CLI jumpbox is needed. |
@@ -124,7 +126,9 @@ This API is used to get devices shared device settings in current domain. The re
             "access_mode":"string",
             "access_mode_port":"string"/int,
             "CLI_credential_username":"string",
-            "privilege_username":"string",
+            "privilege_username":"string",                     
+            "Telnet_Proxy_Id" : "string",
+            "Telnet_Proxy_Id_For_Smart_CLI" : "string",
             "jumpbox_for_FS":"string",
             "jumpbox_for_CLI":"string",
             "prompt_settings":{
@@ -270,6 +274,8 @@ This API is used to get device CLI settings in current domain. The response of t
 |shareDeviceSettings.CLI_setting.access_mode_port| string | port number of access mode. |
 |shareDeviceSettings.CLI_setting.CLI_credential_username| string | usename for CLI credential. |
 |shareDeviceSettings.CLI_setting.privilege_username| string | device privilege username. |
+|shareDeviceSettings.CLI_setting.Telnet_Proxy_Id| string | Telnet_Proxy_Id. |
+|shareDeviceSettings.CLI_setting.Telnet_Proxy_Id_For_Smart_CLI| string | Telnet_Proxy_Id_For_Smart_CLI. |
 |shareDeviceSettings.CLI_setting.jumpbox_for_FS| string | whether a front server jumpbox is needed. |
 |shareDeviceSettings.CLI_setting.jumpbox_for_CLI| string | whether a CLI jumpbox is needed. |
 |shareDeviceSettings.CLI_setting.prompt_settings| object | object for CLI prompt settings. |
@@ -300,7 +306,9 @@ This API is used to get device CLI settings in current domain. The response of t
             "access_mode":"string",
             "access_mode_port":"string"/int,
             "CLI_credential_username":"string",
-            "privilege_username":"string",
+            "privilege_username":"string",           
+            "Telnet_Proxy_Id" : "string",
+            "Telnet_Proxy_Id_For_Smart_CLI" : "string",
             "jumpbox_for_FS":"string",
             "jumpbox_for_CLI":"string",
             "prompt_settings":{
