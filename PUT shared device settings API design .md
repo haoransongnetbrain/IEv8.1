@@ -34,7 +34,7 @@ This API is used to update device CLI settings in current domain. The response o
 |shareDeviceSettings.CLI_setting| object | CLI setting of current device. |
 |shareDeviceSettings.CLI_setting.mode| string | mode for cli access. |
 |shareDeviceSettings.CLI_setting.access_mode| string | access mode. |
-|shareDeviceSettings.CLI_setting.access_mode_port| string | port number of access mode. |
+|shareDeviceSettings.CLI_setting.access_mode_port| integer | port number of access mode. |
 |shareDeviceSettings.CLI_setting.CLI_credential_username| string | usename for CLI credential. |
 |shareDeviceSettings.CLI_setting.CLI_credential_password| string | password for CLI credential. |
 |shareDeviceSettings.CLI_setting.privilege_username| string | device privilege username. |
@@ -200,12 +200,12 @@ This API is used to update device SNMP settings in current domain. The response 
 |shareDeviceSettings.SNMP_setting.snmpVersion| integer | version number of snmp version for current device |
 |shareDeviceSettings.SNMP_setting.UseCustomizedManagementIp| bool | whether current device using the customized management IP.|
 |shareDeviceSettings.SNMP_setting.v3| object | v3 SNMP setting. |
-|shareDeviceSettings.SNMP_setting.v3.contextName| object | v3 SNMP context name. |
-|shareDeviceSettings.SNMP_setting.v3.encryptPro| object | v3 SNMP encryptPro??. |
-|shareDeviceSettings.SNMP_setting.v3.userName| object | v3 SNMP username. |
-|shareDeviceSettings.SNMP_setting.v3.authMode| object | v3 SNMP authentication mode. |
-|shareDeviceSettings.SNMP_setting.v3.authPassword| object | v3 SNMP authentication password. |
-|shareDeviceSettings.SNMP_setting.v3.authPro| object | v3 SNMP authentication pro???. |
+|shareDeviceSettings.SNMP_setting.v3.contextName| string | v3 SNMP context name. |
+|shareDeviceSettings.SNMP_setting.v3.encryptPro| string | v3 SNMP encryptPro??. |
+|shareDeviceSettings.SNMP_setting.v3.userName| string | v3 SNMP username. |
+|shareDeviceSettings.SNMP_setting.v3.authMode| string | v3 SNMP authentication mode. |
+|shareDeviceSettings.SNMP_setting.v3.authPassword| string | v3 SNMP authentication password. |
+|shareDeviceSettings.SNMP_setting.v3.authPro| string | v3 SNMP authentication pro???. |
 |shareDeviceSettings.SNMP_setting.v3.encryptPassword| object | v3 SNMP encryptPassword. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp| object | SNMP customized management IP setting . |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_CPU| string | value of customized management IP retrieve CPU. |
