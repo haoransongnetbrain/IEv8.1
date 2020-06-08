@@ -88,11 +88,11 @@ This API is used to get devices shared device settings in current domain. The re
 |shareDeviceSettings.SNMP_setting.snmpVersion| integer | version number of snmp version for current device |
 |shareDeviceSettings.SNMP_setting.UseCustomizedManagementIp| bool | whether current device using the customized management IP.|
 |shareDeviceSettings.SNMP_setting.v3| object | v3 SNMP setting. |
-|shareDeviceSettings.SNMP_setting.v3.contextName| object | v3 SNMP context name. |
-|shareDeviceSettings.SNMP_setting.v3.encryptPro| object | v3 SNMP encryptPro??. |
-|shareDeviceSettings.SNMP_setting.v3.userName| object | v3 SNMP username. |
-|shareDeviceSettings.SNMP_setting.v3.authMode| object | v3 SNMP authentication mode. |
-|shareDeviceSettings.SNMP_setting.v3.authPro| object | v3 SNMP authentication pro???. |
+|shareDeviceSettings.SNMP_setting.v3.contextName| string | v3 SNMP context name. |
+|shareDeviceSettings.SNMP_setting.v3.encryptPro| string | v3 SNMP encryptPro??. |
+|shareDeviceSettings.SNMP_setting.v3.userName| string | v3 SNMP username. |
+|shareDeviceSettings.SNMP_setting.v3.authMode| string | v3 SNMP authentication mode. |
+|shareDeviceSettings.SNMP_setting.v3.authPro| string | v3 SNMP authentication pro???. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp| object | SNMP customized management IP setting . |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_CPU| string | value of customized management IP retrieve CPU. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_memory| string | value of customized management IP retrieve memory. |
