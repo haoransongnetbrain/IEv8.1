@@ -270,7 +270,7 @@ This API is used to get device CLI settings in current domain. The response of t
 |shareDeviceSettings.CLI_setting| object | CLI setting of current device. |
 |shareDeviceSettings.CLI_setting.mode| string | mode for cli access. |
 |shareDeviceSettings.CLI_setting.access_mode| string | access mode. |
-|shareDeviceSettings.CLI_setting.access_mode_port| string | port number of access mode. |
+|shareDeviceSettings.CLI_setting.access_mode_port| integer | port number of access mode. |
 |shareDeviceSettings.CLI_setting.CLI_credential_username| string | usename for CLI credential. |
 |shareDeviceSettings.CLI_setting.privilege_username| string | device privilege username. |
 |shareDeviceSettings.CLI_setting.Telnet_Proxy_Id| string | Telnet_Proxy_Id. |
