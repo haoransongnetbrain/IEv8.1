@@ -55,7 +55,6 @@ This API is used to update device CLI settings in current domain. The response o
 |shareDeviceSettings.CLI_setting.advenced_setting.SSH_key_setting| object | object for CLI SSH finger print settings. |
 |shareDeviceSettings.CLI_setting.advenced_setting.SSH_key_setting.checkSSHFingerprint| bool | enable or not for SSH Fingerprint key. |
 |shareDeviceSettings.CLI_setting.advenced_setting.SSH_key_setting.SSHFingerprintKey| string | SSH fingerprint key value. |
-|shareDeviceSettings.CLI_setting.advenced_setting.LoginScript| object | haven't decide whether should be opened to customer. |
 
 ***Example***
 
