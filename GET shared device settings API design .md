@@ -25,8 +25,8 @@ This API is used to get devices shared device settings in current domain. The re
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
-|hostname|string OR list of string|A list of device hostnames|
-|ip|string OR list of string|A list of device management IPs|
+|hostname| list of string|A list of device hostnames|
+|ip| list of string|A list of device management IPs|
 |||If provided both of hostname and ip, hostname has higher priority. If any of the devices are not found from the provided query parameter, return the found devices as a list in response and add another json key "deviceNotFound", the value is a mixed list of hostnames and IPs that are not found. If both of hostname and ip are as empty, response would depends on the "skip" and "limit" values customer insert. |
 |skip|integer|The amount of records to be skipped. The value must not be negative.  If the value is negative, API throws exception {"statusCode":791001,"statusDescription":"Parameter 'skip' cannot be negative"}. No upper bound for this parameter.|
 |limit|integer|The up limit amount of device records to return per API call. The value must not be negative.  If the value is negative, API throws exception {"statusCode":791001,"statusDescription":"Parameter 'limit' cannot be negative"}. No upper bound for this parameter. If the parameter is not specified in API call, it means there is not limitation setting on the call.|
