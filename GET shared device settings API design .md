@@ -68,8 +68,6 @@ This API is used to get devices shared device settings in current domain. The re
 |shareDeviceSettings.CLI_setting.Telnet_Proxy_Id| string | Telnet_Proxy_Id. |
 |shareDeviceSettings.CLI_setting.Telnet_Proxy_Id_For_Smart_CLI| string | Telnet_Proxy_Id_For_Smart_CLI. |
 |shareDeviceSettings.CLI_setting.privilege_username| string | device privilege username. |
-|shareDeviceSettings.CLI_setting.jumpbox_for_FS| string | whether a front server jumpbox is needed. |
-|shareDeviceSettings.CLI_setting.jumpbox_for_CLI| string | whether a CLI jumpbox is needed. |
 |shareDeviceSettings.CLI_setting.prompt_settings| object | object for CLI prompt settings. |
 |shareDeviceSettings.CLI_setting.prompt_settings.non_privilege_prompt| string | non_privilege_prompt. |
 |shareDeviceSettings.CLI_setting.prompt_settings.privilege_prompt| string | privilege_prompt. |
@@ -128,8 +126,6 @@ This API is used to get devices shared device settings in current domain. The re
             "privilege_username":"string",                     
             "Telnet_Proxy_Id" : "string",
             "Telnet_Proxy_Id_For_Smart_CLI" : "string",
-            "jumpbox_for_FS":"string",
-            "jumpbox_for_CLI":"string",
             "prompt_settings":{
                 "non_privilege_prompt":"string",
                 "privilege_prompt":"string",
@@ -275,8 +271,6 @@ This API is used to get device CLI settings in current domain. The response of t
 |shareDeviceSettings.CLI_setting.privilege_username| string | device privilege username. |
 |shareDeviceSettings.CLI_setting.Telnet_Proxy_Id| string | Telnet_Proxy_Id. |
 |shareDeviceSettings.CLI_setting.Telnet_Proxy_Id_For_Smart_CLI| string | Telnet_Proxy_Id_For_Smart_CLI. |
-|shareDeviceSettings.CLI_setting.jumpbox_for_FS| string | whether a front server jumpbox is needed. |
-|shareDeviceSettings.CLI_setting.jumpbox_for_CLI| string | whether a CLI jumpbox is needed. |
 |shareDeviceSettings.CLI_setting.prompt_settings| object | object for CLI prompt settings. |
 |shareDeviceSettings.CLI_setting.prompt_settings.non_privilege_prompt| string | non_privilege_prompt. |
 |shareDeviceSettings.CLI_setting.prompt_settings.privilege_prompt| string | privilege_prompt. |
@@ -307,8 +301,6 @@ This API is used to get device CLI settings in current domain. The response of t
             "privilege_username":"string",           
             "Telnet_Proxy_Id" : "string",
             "Telnet_Proxy_Id_For_Smart_CLI" : "string",
-            "jumpbox_for_FS":"string",
-            "jumpbox_for_CLI":"string",
             "prompt_settings":{
                 "non_privilege_prompt":"string",
                 "privilege_prompt":"string",
