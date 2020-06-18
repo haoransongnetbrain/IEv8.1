@@ -74,7 +74,7 @@ API Body = {
             "privilege_username":"string",
             "privilege_password":"string",           
             "Telnet_Proxy_Id" : "string",
-            "Telnet_Proxy_Id_For_Smart_CLI" : "string"
+            "Telnet_Proxy_Id_For_Smart_CLI" : "string"，
             "prompt_settings":{
                 "non_privilege_prompt":"string",
                 "privilege_prompt":"string",
