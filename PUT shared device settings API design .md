@@ -41,8 +41,6 @@ This API is used to update device CLI settings in current domain. The response o
 |shareDeviceSettings.CLI_setting.privilege_password| string | device privilege password. |
 |shareDeviceSettings.CLI_setting.Telnet_Proxy_Id| string | Telnet_Proxy_Id. |
 |shareDeviceSettings.CLI_setting.Telnet_Proxy_Id_For_Smart_CLI| string | Telnet_Proxy_Id_For_Smart_CLI. |
-|shareDeviceSettings.CLI_setting.jumpbox_for_FS| string | whether a front server jumpbox is needed. |
-|shareDeviceSettings.CLI_setting.jumpbox_for_CLI| string | whether a CLI jumpbox is needed. |
 |shareDeviceSettings.CLI_setting.prompt_settings| object | object for CLI prompt settings. |
 |shareDeviceSettings.CLI_setting.prompt_settings.non_privilege_prompt| string | non_privilege_prompt. |
 |shareDeviceSettings.CLI_setting.prompt_settings.privilege_prompt| string | privilege_prompt. |
@@ -76,9 +74,7 @@ API Body = {
             "privilege_username":"string",
             "privilege_password":"string",           
             "Telnet_Proxy_Id" : "string",
-            "Telnet_Proxy_Id_For_Smart_CLI" : "string",
-            "jumpbox_for_FS":"string",
-            "jumpbox_for_CLI":"string",
+            "Telnet_Proxy_Id_For_Smart_CLI" : "string"
             "prompt_settings":{
                 "non_privilege_prompt":"string",
                 "privilege_prompt":"string",
