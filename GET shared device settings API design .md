@@ -85,12 +85,7 @@ This API is used to get devices shared device settings in current domain. The re
 |shareDeviceSettings.SNMP_setting.snmpPort| integer | SNMP port number. |
 |shareDeviceSettings.SNMP_setting.snmpVersion| integer | version number of snmp version for current device |
 |shareDeviceSettings.SNMP_setting.UseCustomizedManagementIp| bool | whether current device using the customized management IP.|
-|shareDeviceSettings.SNMP_setting.v3| object | v3 SNMP setting. |
-|shareDeviceSettings.SNMP_setting.v3.contextName| string | v3 SNMP context name. |
-|shareDeviceSettings.SNMP_setting.v3.encryptPro| string | v3 SNMP encryptPro??. |
-|shareDeviceSettings.SNMP_setting.v3.userName| string | v3 SNMP username. |
-|shareDeviceSettings.SNMP_setting.v3.authMode| string | v3 SNMP authentication mode. |
-|shareDeviceSettings.SNMP_setting.v3.authPro| string | v3 SNMP authentication pro???. |
+|shareDeviceSettings.SNMP_setting.v3| string | Alies Name. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp| object | SNMP customized management IP setting . |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_CPU| string | value of customized management IP retrieve CPU. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_memory| string | value of customized management IP retrieve memory. |
@@ -99,7 +94,7 @@ This API is used to get devices shared device settings in current domain. The re
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.LiveStatus| integer | SNMP setting of current device. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.ro| string | value of customized management IP RO. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.rw| string | value of customized management IP RW. |
-|shareDeviceSettings.SNMP_setting.CustomizedManagementIp.v3| object | same with shareDeviceSettings.SNMP_setting.v3 |
+|shareDeviceSettings.SNMP_setting.CustomizedManagementIp.v3| string | Alies Name. |
 |shareDeviceSettings.API_setting| object list | API servers applied to current device. |
 |shareDeviceSettings.API_setting.API_plugin| string | name of applied API plugin. |
 |shareDeviceSettings.API_setting.API_server| object | applied API server. |
@@ -145,14 +140,8 @@ This API is used to get devices shared device settings in current domain. The re
                   "rwString": "=",
                   "snmpID": null,
                   "snmpPort": 161,
-                  "v3": {
-                    "contextName": "",
-                    "encryptPro": 0,
-                    "userName": "=",
-                    "authMode": 0,
-                    "authPro": 0
-                  },
-                  "snmpVersion": 2,
+                  "v3": "AliesName",
+                  "snmpVersion": 1/2/3,
                   "UseCustomizedManagementIp": false,
                   "CustomizedManagementIp": {
                     "retrieve_CPU":"string",
@@ -162,13 +151,7 @@ This API is used to get devices shared device settings in current domain. The re
                     "snmpVersion": "string",
                     "ro": "string",
                     "rw": "string",
-                    "v3": {
-                      "contextName": "",
-                      "encryptPro": 0,
-                      "userName": "=",
-                      "authMode": 0,
-                      "authPro": 0
-                    }
+                    "v3": "AliesName"
                   }  
             },
         "API_setting" : {[
@@ -419,13 +402,7 @@ This API is used to get device SNMP settings in current domain. The response of 
           "rwString": "=",
           "snmpID": null,
           "snmpPort": 161,
-          "v3": {
-            "contextName": "",
-            "encryptPro": 0,
-            "userName": "=",
-            "authMode": 0,
-            "authPro": 0
-          },
+          "v3": "AliesName",
           "snmpVersion": 2,
           "UseCustomizedManagementIp": false,
           "CustomizedManagementIp": {
@@ -436,13 +413,7 @@ This API is used to get device SNMP settings in current domain. The response of 
             "snmpVersion": "string",
             "ro": "string",
             "rw": "string",
-            "v3": {
-              "contextName": "",
-              "encryptPro": 0,
-              "userName": "=",
-              "authMode": 0,
-              "authPro": 0
-            }
+            "v3": "AliesName"
           }  
         }
     }
