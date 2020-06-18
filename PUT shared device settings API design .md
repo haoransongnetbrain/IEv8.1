@@ -191,7 +191,6 @@ This API is used to update device SNMP settings in current domain. The response 
 |shareDeviceSettings.SNMP_setting| object | SNMP setting of current device. |
 |shareDeviceSettings.SNMP_setting.roString| string  | value of device snmp RO.  |
 |shareDeviceSettings.SNMP_setting.rwString| string | value of device snmp RWq. |
-|shareDeviceSettings.SNMP_setting.snmpID| string | value of SNMP ID if there is one for this device |
 |shareDeviceSettings.SNMP_setting.snmpPort| integer | SNMP port number. |
 |shareDeviceSettings.SNMP_setting.snmpVersion| integer | version number of snmp version for current device |
 |shareDeviceSettings.SNMP_setting.UseCustomizedManagementIp| bool | whether current device using the customized management IP.|
@@ -227,7 +226,6 @@ API Body = {
         "SNMP_setting" : {
           "roString": "=",
           "rwString": "=",
-          "snmpID": null,
           "snmpPort": 161,
           "v3": {
             "contextName": "",
