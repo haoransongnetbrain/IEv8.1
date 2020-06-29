@@ -26,7 +26,7 @@ This API is used to update device basic settings in current domain. The response
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
-|shareDeviceSettings.LiveHostName*| string | Device hostname. |
+|shareDeviceSettings.HostName*| string | Device hostname. |
 |shareDeviceSettings.ManageIp* | string | Device management IP address. |
 |shareDeviceSettings.ApplianceId | string | Name of front server. |
 |shareDeviceSettings.Locked| bool | Whether the device setting has been locked. |
@@ -39,7 +39,7 @@ This API is used to update device basic settings in current domain. The response
 API Body = {  
         "Locked" : False,
         "LiveStatus" : 1,
-        "LiveHostName" : "CP-SW1",
+        "HostName" : "CP-SW1",
         "ApplianceId" : "FS1",
         "ManageIp" : "192.168.0.58
 }
@@ -120,7 +120,7 @@ This API is used to update device CLI settings in current domain. The response o
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
-|shareDeviceSettings.LiveHostName*| string | Device hostname. |
+|shareDeviceSettings.HostName*| string | Device hostname. |
 |shareDeviceSettings.ManageIp* | string | Device management IP address. |
 |shareDeviceSettings.CLI_setting| object | CLI setting of current device. |
 |shareDeviceSettings.CLI_setting.mode| string | mode for cli access. |
@@ -150,7 +150,7 @@ This API is used to update device CLI settings in current domain. The response o
 
 ```python
 API Body = { 
-        "LiveHostName" : "CP-SW1",
+        "HostName" : "CP-SW1",
         "ManageIp" : "192.168.0.58",
         "CLI_setting" : {
             "mode":"string",
@@ -243,7 +243,7 @@ This API is used to update device SNMP settings in current domain. The response 
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
-|shareDeviceSettings.LiveHostName| string | Device hostname. |
+|shareDeviceSettings.HostName| string | Device hostname. |
 |shareDeviceSettings.ManageIp | string | Device management IP address. |
 |shareDeviceSettings.SNMP_setting| object | SNMP setting of current device. |
 |shareDeviceSettings.SNMP_setting.roString| string  | value of device snmp RO.  |
@@ -266,7 +266,7 @@ This API is used to update device SNMP settings in current domain. The response 
 
 ```python
 API Body = {  
-        "LiveHostName" : "CP-SW1",
+        "HostName" : "CP-SW1",
         "ManageIp" : "192.168.0.58",
         "SNMP_setting" : {
           "roString": "=",
@@ -350,7 +350,7 @@ This API is used to update device API server settings in current domain. The res
 
 |**Name**|**Type**|**Description**|
 |------|------|------|
-|shareDeviceSettings.LiveHostName*| string | Device hostname. |
+|shareDeviceSettings.HostName*| string | Device hostname. |
 |shareDeviceSettings.ManageIp* | string | Device management IP address. |
 |shareDeviceSettings.API_setting| object list | API servers applied to current device. |
 |shareDeviceSettings.API_setting.API_plugin| string | name of applied API plugin. |
@@ -361,7 +361,7 @@ This API is used to update device API server settings in current domain. The res
 
 ```python
 API Body = {  
-        "LiveHostName" : "CP-SW1",
+        "HostName" : "CP-SW1",
         "ManageIp" : "192.168.0.58",
         "API_setting" : {[
                 {
