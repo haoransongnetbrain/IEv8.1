@@ -55,7 +55,7 @@ This API is used to get devices shared device settings in current domain. The re
 |statusCode|integer|Code issued by NetBrain server indicating the execution result.|
 |statusDescription|string|The explanation of the status code.|
 |shareDeviceSettings|object list| A list of device setting object.|
-|shareDeviceSettings.LiveHostName| string | Device hostname. |
+|shareDeviceSettings.HostName| string | Device hostname. |
 |shareDeviceSettings.ManageIp | string | Device management IP address. |
 |shareDeviceSettings.ApplianceId | string | Name of front server. |
 |shareDeviceSettings.Locked| bool | Whether the device setting has been locked. |
@@ -110,7 +110,7 @@ This API is used to get devices shared device settings in current domain. The re
     "Shared device setting" : {
         "Locked" : False,
         "LiveStatus" : 1,
-        "LiveHostName" : "CP-SW1",
+        "HostName" : "CP-SW1",
         "ApplianceId" : "FS1",
         "ManageIp" : "192.168.0.58",
         "CLI_setting" : {
@@ -241,7 +241,7 @@ This API is used to get device CLI settings in current domain. The response of t
 |statusCode|integer|Code issued by NetBrain server indicating the execution result.|
 |statusDescription|string|The explanation of the status code.|
 |shareDeviceSettings|object list| A list of device setting object.|
-|shareDeviceSettings.LiveHostName| string | Device hostname. |
+|shareDeviceSettings.HostName| string | Device hostname. |
 |shareDeviceSettings.ManageIp | string | Device management IP address. |
 |shareDeviceSettings.ApplianceId | string | Name of front server. |
 |shareDeviceSettings.Locked| bool | Whether the device setting has been locked. |
@@ -273,7 +273,7 @@ This API is used to get device CLI settings in current domain. The response of t
     "Shared device setting" : {
         "Locked" : False,
         "LiveStatus" : 1,
-        "LiveHostName" : "CP-SW1",
+        "HostName" : "CP-SW1",
         "ApplianceId" : "FS1",
         "ManageIp" : "192.168.0.58",
         "CLI_setting" : {
@@ -358,7 +358,7 @@ This API is used to get device SNMP settings in current domain. The response of 
 |statusCode|integer|Code issued by NetBrain server indicating the execution result.|
 |statusDescription|string|The explanation of the status code.|
 |shareDeviceSettings|object list| A list of device setting object.|
-|shareDeviceSettings.LiveHostName| string | Device hostname. |
+|shareDeviceSettings.HostName| string | Device hostname. |
 |shareDeviceSettings.ManageIp | string | Device management IP address. |
 |shareDeviceSettings.ApplianceId | string | Name of front server. |
 |shareDeviceSettings.Locked| bool | Whether the device setting has been locked. |
@@ -394,7 +394,7 @@ This API is used to get device SNMP settings in current domain. The response of 
     "Shared device setting" : {
         "Locked" : False,
         "LiveStatus" : 1,
-        "LiveHostName" : "CP-SW1",
+        "HostName" : "CP-SW1",
         "ApplianceId" : "FS1",
         "ManageIp" : "192.168.0.58",
         "SNMP_setting" : {
@@ -476,7 +476,7 @@ This API is used to get device API server settings in current domain. The respon
 |statusCode|integer|Code issued by NetBrain server indicating the execution result.|
 |statusDescription|string|The explanation of the status code.|
 |shareDeviceSettings|object list| A list of device setting object.|
-|shareDeviceSettings.LiveHostName| string | Device hostname. |
+|shareDeviceSettings.HostName| string | Device hostname. |
 |shareDeviceSettings.ManageIp | string | Device management IP address. |
 |shareDeviceSettings.ApplianceId | string | Name of front server. |
 |shareDeviceSettings.Locked| bool | Whether the device setting has been locked. |
@@ -496,7 +496,7 @@ This API is used to get device API server settings in current domain. The respon
     "Shared device setting" : {
         "Locked" : False,
         "LiveStatus" : 1,
-        "LiveHostName" : "CP-SW1",
+        "HostName" : "CP-SW1",
         "ApplianceId" : "FS1",
         "ManageIp" : "192.168.0.58",
         "API_setting" : {[
