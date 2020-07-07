@@ -356,7 +356,6 @@ This API is used to update device API server settings in current domain. The res
 |shareDeviceSettings.API_setting.API_plugin| string | name of applied API plugin. |
 |shareDeviceSettings.API_setting.API_server| object | applied API server. |
 |shareDeviceSettings.API_setting.API_server.name| string | applied API servers name. |
-|shareDeviceSettings.API_setting.API_server.front_server| string | front server connect with applied API server. |
 
 
 ```python
@@ -367,22 +366,19 @@ API Body = {
                 {
                     "API_plugin" : "string",
                     "API_server" : {
-                        "name" : "string"/null,
-                        "front_server" : "string"/null
+                        "name" : "string"/null
                     }     
                 },
                 {
                     "API_plugin" : "string",
                     "API_server" : {
-                        "name" : "string"/null,
-                        "front_server" : "string"/null
+                        "name" : "string"/null
                     }  
                 },
                 {
                     "API_plugin" : "string",
                     "API_server" : {
-                        "name" : "string"/null,
-                        "front_server" : "string"/null
+                        "name" : "string"/null
                     }     
                 },
                 .
