@@ -252,9 +252,9 @@ This API is used to update device SNMP settings in current domain. The response 
 |shareDeviceSettings.SNMP_setting.snmpVersion| integer | version number of snmp version for current device |
 |shareDeviceSettings.SNMP_setting.UseCustomizedManagementIp| bool | whether current device using the customized management IP.|
 |shareDeviceSettings.SNMP_setting.v3| string | Alies name. |
+|shareDeviceSettings.SNMP_setting.retrieve_CPU_OID| string | value of customized management IP retrieve CPU OID. |
+|shareDeviceSettings.SNMP_setting.retrieve_memory_OID| string | value of customized management IP retrieve memory OID.|
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp| object | SNMP customized management IP setting . |
-|shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_CPU| string | value of customized management IP retrieve CPU. |
-|shareDeviceSettings.SNMP_setting.CustomizedManagementIp.retrieve_memory| string | value of customized management IP retrieve memory. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.ManageIp| string | value of customized management IP. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.snmpVersion| string | customized SNMP version. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.LiveStatus| integer | SNMP setting of current device. |
@@ -275,9 +275,9 @@ API Body = {
           "snmpPort": 161,
           "v3": "AliesName",
           "UseCustomizedManagementIp": false,
-          "CustomizedManagementIp": {
-            "retrieve_CPU":"string",
-            "retrieve_memory":"string",
+          "retrieve_CPU":"string",
+          "retrieve_memory":"string",
+          "CustomizedManagementIp": {            
             "ManageIp": "",
             "LiveStatus": int,
             "snmpVersion": "string",
@@ -363,7 +363,7 @@ This API is used to update device API server settings in current domain. The res
 API Body = {  
         "HostName" : "CP-SW1",
         "ManageIp" : "192.168.0.58",
-        "API_setting" : {[
+        "API_setting" : [
                 {
                     "API_plugin" : "string",
                     "API_server" : {
@@ -388,8 +388,7 @@ API Body = {
                 .
                 .
                 .
-            ]
-        }
+          ]
 }
 ```
 
