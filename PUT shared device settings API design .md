@@ -32,8 +32,8 @@ This API is used to update device CLI settings in current domain. The response o
 |shareDeviceSettings.Locked| bool | Whether the device setting has been locked. |
 |shareDeviceSettings.LiveStatus| integer | live status of current device. |
 |shareDeviceSettings.CLI_setting| object | CLI setting of current device. |
-|shareDeviceSettings.CLI_setting.mode| string | mode for cli access. |
-|shareDeviceSettings.CLI_setting.access_mode| string | access mode. |
+|shareDeviceSettings.CLI_setting.mode| integer | mode for cli access. <br> 0 : DirectAccess <br> 1 : ViaOtherDevice|
+|shareDeviceSettings.CLI_setting.access_mode| integer | access mode. <br> 0 : Telnet <br> 1 : SSH <br> 2 : SSHPubicKey|
 |shareDeviceSettings.CLI_setting.access_mode_port| integer | port number of access mode. |
 |shareDeviceSettings.CLI_setting.CLI_credential_username| string | usename for CLI credential. |
 |shareDeviceSettings.CLI_setting.CLI_credential_password| string | password for CLI credential. |
@@ -66,8 +66,8 @@ API Body = {
         "ApplianceId" : "FS1",
         "ManageIp" : "192.168.0.58",
         "CLI_setting" : {
-            "mode":"string",
-            "access_mode":"string",
+            "mode": 0\1,
+            "access_mode":0\1\2,
             "access_mode_port":"string"/int,
             "CLI_credential_username":"string",
             "CLI_credential_Password":"string",
