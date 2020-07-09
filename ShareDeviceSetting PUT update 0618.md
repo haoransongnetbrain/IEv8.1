@@ -256,6 +256,7 @@ This API is used to update device SNMP settings in current domain. The response 
 |shareDeviceSettings.SNMP_setting.retrieve_memory_OID| string | value of customized management IP retrieve memory OID.|
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp| object | SNMP customized management IP setting . |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.ManageIp| string | value of customized management IP. |
+|shareDeviceSettings.SNMP_setting.CustomizedManagementIp.Port| int | value of customized port number. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.snmpVersion| string | customized SNMP version. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.LiveStatus| integer | SNMP setting of current device. |
 |shareDeviceSettings.SNMP_setting.CustomizedManagementIp.ro| string | value of customized management IP RO. |
@@ -280,6 +281,7 @@ API Body = {
           "CustomizedManagementIp": {            
             "ManageIp": "",
             "LiveStatus": int,
+            "Port" : int,
             "snmpVersion": "string",
             "ro": "string",
             "rw": "string",
