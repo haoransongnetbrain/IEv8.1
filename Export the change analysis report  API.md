@@ -4,6 +4,8 @@
 ## ***POST*** /V1/ChangeAnalysis/ExportReport
 Calling this API to export the change analysis.
 
+***Note:*** To enable this API in V8.02 environment, a patch is needed, please contact with NetBrain team to apply the patch.
+
 ## Detail Information
 
 > **Title** : Export the change analysis report API<br>
@@ -18,6 +20,27 @@ Calling this API to export the change analysis.
 |------|------|------|
 |<img width=100/>|<img width=100/>|<img width=500/>|
 |Bearer Authentication| Headers | Authentication token | 
+
+## Headers
+
+> **Data Format Headers**
+
+|**Name**|**Type**|**Description**|
+|------|------|------|
+|<img width=100/>|<img width=100/>|<img width=500/>|
+| Content-Type | string  | support "application/json" |
+| Accept | string  | support "application/json" |
+
+> **Authorization Headers**
+
+|**Name**|**Type**|**Description**|
+|------|------|------|
+|<img width=100/>|<img width=100/>|<img width=500/>|
+| token | string  | Authentication token, get from login API. |
+
+## Query Parameters(****required***)
+
+>No request query parameter.
 
 ## Request body(****required***)
 
@@ -82,28 +105,6 @@ API Body = {
 }
 
 ```
-
-## Query Parameters(****required***)
-
->No request query parameter.
-
-
-## Headers
-
-> **Data Format Headers**
-
-|**Name**|**Type**|**Description**|
-|------|------|------|
-|<img width=100/>|<img width=100/>|<img width=500/>|
-| Content-Type | string  | support "application/json" |
-| Accept | string  | support "application/json" |
-
-> **Authorization Headers**
-
-|**Name**|**Type**|**Description**|
-|------|------|------|
-|<img width=100/>|<img width=100/>|<img width=500/>|
-| token | string  | Authentication token, get from login API. |
 
 ## Response
 
